@@ -10,3 +10,23 @@ function printName(user) {
         console.log(user.firstName.toUpperCase());
 }
 printName({ lastName: 'deev' });
+const user = {
+    login: 'svyat',
+    password: '12345',
+    isOnline: true,
+    lastVisited: new Date(2000, 1, 1),
+};
+const admin = {
+    login: 'svyat',
+    password: '12345',
+    isOnline: true,
+    lastVisited: new Date(2000, 1, 1),
+    role: 'admin',
+};
+//минимальный набор обязательных параметров пишу параметрах
+function login(user) {
+    if (user.login.length > 0 && user.password.length > 0) {
+        console.log(`hello ${user.login}`);
+    }
+}
+login(user);

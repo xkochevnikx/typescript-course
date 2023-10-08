@@ -11,3 +11,42 @@ function printName(user: { firstName?: string; lastName: string }): void {
 }
 
 printName({ lastName: 'deev' });
+
+interface IUser {
+    login: string;
+    password: string;
+    isOnline: boolean;
+    lastVisited: Date;
+}
+
+interface IAdmin {
+    login: string;
+    password: string;
+    isOnline: boolean;
+    lastVisited: Date;
+    role: string;
+}
+
+const user: IUser = {
+    login: 'svyat',
+    password: '12345',
+    isOnline: true,
+    lastVisited: new Date(2000, 1, 1),
+};
+
+const admin: IAdmin = {
+    login: 'svyat',
+    password: '12345',
+    isOnline: true,
+    lastVisited: new Date(2000, 1, 1),
+    role: 'admin',
+};
+
+//минимальный набор обязательных параметров пишу параметрах
+function login(user: { login: string; password: string }) {
+    if (user.login.length > 0 && user.password.length > 0) {
+        console.log(`hello ${user.login}`);
+    }
+}
+
+login(user);
