@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.login = void 0;
 //при передачи в параметры объекта в нем указываеютя обязательные поля но кроме этих полей в передаваемом в аргументы объекте могут быть еще значения и это не вызывет ошибки такой нюанс
 let obj = { x: 'w', y: 'q', c: 'f' };
 function printPoint(point) {
@@ -29,4 +31,5 @@ function login(user) {
         console.log(`hello ${user.login}`);
     }
 }
+exports.login = login;
 login(user);
