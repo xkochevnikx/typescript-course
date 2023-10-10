@@ -8,8 +8,9 @@ interface IUser {
 }
 
 interface IUser {
-    isOnlain?: boolean;
+    isOnline?: boolean;
 }
+
 const user: IUser = {
     email: 'c',
     login: 'fd',
@@ -36,4 +37,7 @@ interface Employee extends IUser, Person {
     contractStart: Date;
 }
 
-// const user1: Employee = {};
+// const user1: Employee = {
+
+// };
+export {};
