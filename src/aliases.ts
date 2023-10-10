@@ -39,3 +39,5 @@ type Developer = {} & User & Person;
 const dev: Developer = {
     //все поля алиаса user , person
 };
+
+export {};
