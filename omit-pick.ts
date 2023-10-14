@@ -8,3 +8,4 @@ interface ITodo {
 type TodoSimple = Omit<ITodo, 'completed'>;
 
 type TodoSimple2 = Pick<ITodo, 'completed'>;
+export {};
