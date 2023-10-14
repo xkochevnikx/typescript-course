@@ -28,3 +28,4 @@ function toArray<T>(...arr: T[]): T[] {
 
 toArray(1, 2, 3);
 toArray('', '');
+export {};
