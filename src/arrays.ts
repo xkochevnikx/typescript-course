@@ -21,3 +21,4 @@ arrOfArr.push([]);
 function printArr(arr: unknown[]): void {
     arr.push('');
 }
+export {};

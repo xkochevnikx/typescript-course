@@ -17,7 +17,7 @@ function crash(): never {
 }
 
 //
-function avarage(...nums: number[]) {
+export function avarage(...nums: number[]) {
     const sum = nums.reduce((current, total) => current + total, 0);
 
     return sum / nums.length;
